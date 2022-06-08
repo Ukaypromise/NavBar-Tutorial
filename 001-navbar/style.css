@@ -37,6 +37,7 @@ a {
 }
 .nav-link:hover {
   color: steelblue;
+  font-size: 2rem;
 }
 .hambuger {
   display: none;
@@ -64,6 +65,19 @@ a {
   .hambuger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .hambuger:hover .bar:nth-child(2) {
+    opacity: 1;
+    transform: translateX(15px);
+    background-color: steelblue;
+  }
+  .hambuger:hover .bar:nth-child(1) {
+    transform: translateY(15px) rotate(10deg);
+  }
+  .hambuger:hover .bar:nth-child(3) {
+    transform: translateY(-15px) rotate(-10deg);
+  }
+
   .nav-menu {
     position: fixed;
     right: 100%;
